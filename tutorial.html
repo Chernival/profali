@@ -104,14 +104,14 @@
 			<section>
 	        <h2 class="text-center">EVENTS</h2>
 				<div  class="row">
-					<div class="col-md-3 animated wow fadeInUp" data-wow-delay=".2s">
+					<div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
 	                    <div class="team-player">
 	                    	<img src="assets/gambar/nopec.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>National Olympiad of Chemical Engineering</b></h4>
 	                        <p class="description">NOPEC (National Olympiad of Chemical Engineering) 2017 merupakan olimpiade Teknik Kimia tingkat SMA/sederajat se-Indonesia yang dilaksanakan dalam 3 tahap seleksi. Seleksi I dan II dilakukan secara online. Semi Final dan Grand Final dilaksanakan secara offline di kampus Teknik Kimia FTI-ITS. Apresiasi dari kompetisi ini berupa jaminan diterima sebagai mahasiswa Teknik Kimia FTI-ITS melalui jalur SNMPTN undangan.</p>
 	                    </div>
 	                </div>
-	                <div class="col-md-3 animated wow fadeInUp" data-wow-delay=".2s">
+	                <div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
 	                    <div class="team-player">
 	                    	<img src="assets/gambar/chemecar.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>Indonesia Chemical Engineering Car Competition</b></h4>
@@ -119,14 +119,14 @@
 							</p>
 	                    </div>
 	                </div>
-	                <div class="col-md-3 animated wow fadeInUp" data-wow-delay=".2s">
+	                <div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
 	                    <div class="team-player">
 	                    <img src="assets/gambar/paper.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>Indonesia Chemical Engineering Paper Competition</b></h4>
 	                        <p class="description">Indonesia Chemical Engineering Paper Competition merupakan kompetisi karya tulis ilmiah dalam bentuk paper. Kompetisi ini terbagi dalam 2 sub acara, yaitu Poster Presentation dan Golden Dinner.</p>
 	                    </div>
 	                </div>
-	                <div class="col-md-3 animated wow fadeInUp" data-wow-delay=".2s">
+	                <div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
 	                    <div class="team-player">
 	                    	<img src="assets/gambar/safe.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>Chernival SAFE</b></h4>
@@ -466,42 +466,135 @@ $(document).ready(function(){
       function initialize() {
         var bangalore = { lat: -7.2810835, lng: 112.7977483 };
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 20,
+          zoom: 18,
           center: bangalore,
 		  styles:[
+    {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "invert_lightness": true
+            },
+            {
+                "saturation": "0"
+            },
+            {
+                "lightness": "0"
+            },
+            {
+                "gamma": "1"
+            },
+            {
+                "visibility": "on"
+            },
+            {
+                "hue": "#00bdff"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#0f50d2"
+            },
+            {
+                "saturation": "-31"
+            },
+            {
+                "lightness": "-37"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
     {
         "featureType": "all",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "saturation": 36
+                "saturation": "30"
             },
             {
-                "color": "#000000"
+                "lightness": "-53"
             },
             {
-                "lightness": 40
+                "gamma": "3.37"
+            },
+            {
+                "hue": "#00bdff"
             }
         ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
+        "featureType": "landscape.man_made",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#192341"
+            },
+            {
+                "lightness": "24"
+            },
+            {
+                "saturation": "-4"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
         "stylers": [
             {
                 "visibility": "on"
             },
             {
-                "color": "#fff"
-            },
-            {
-                "lightness": 16
+                "color": "#192341"
             }
         ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.icon",
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#151722"
+            },
+            {
+                "lightness": "2"
+            },
+            {
+                "saturation": "21"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#192341"
+            },
+            {
+                "lightness": "-35"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "labels.text",
         "stylers": [
             {
                 "visibility": "off"
@@ -509,128 +602,20 @@ $(document).ready(function(){
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#0f3f53"
-            },
-            {
-                "lightness": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
         "featureType": "water",
-        "elementType": "geometry",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#0f50d2"
             },
             {
-                "lightness": 17
+                "saturation": "-11"
+            },
+            {
+                "gamma": "1"
+            },
+            {
+                "lightness": "-45"
             }
         ]
     }
