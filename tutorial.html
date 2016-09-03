@@ -104,14 +104,14 @@
 			<section>
 	        <h2 class="text-center">EVENTS</h2>
 				<div  class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
+					<div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s" style="min-height:40em;">
 	                    <div class="team-player">
 	                    	<img src="assets/gambar/nopec.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>National Olympiad of Chemical Engineering</b></h4>
 	                        <p class="description">NOPEC (National Olympiad of Chemical Engineering) 2017 merupakan olimpiade Teknik Kimia tingkat SMA/sederajat se-Indonesia yang dilaksanakan dalam 3 tahap seleksi. Seleksi I dan II dilakukan secara online. Semi Final dan Grand Final dilaksanakan secara offline di kampus Teknik Kimia FTI-ITS. Apresiasi dari kompetisi ini berupa jaminan diterima sebagai mahasiswa Teknik Kimia FTI-ITS melalui jalur SNMPTN undangan.</p>
 	                    </div>
 	                </div>
-	                <div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s">
+	                <div class="col-lg-3 col-md-6 col-sm-6 animated wow fadeInUp" data-wow-delay=".2s" style="min-height:40em;">
 	                    <div class="team-player">
 	                    	<img src="assets/gambar/chemecar.jpg" style="width:100%" class="img-rounded" />
 	                        <h4><b>Indonesia Chemical Engineering Car Competition</b></h4>
@@ -251,7 +251,7 @@
                     <img id="image-6" src="assets/img/archives/file_1.jpg" style="width:100%; margin-bottom:30px" class="img-rounded" />
 					<span class="caption scale-caption">
 						<h2 class="text-center"><strong>Title</strong></h2>
-						<p class="text-center">Descripsi</p>
+						<p class="text-center">Description</p>
 					</span>
 					</div>
                 </div>
@@ -260,7 +260,7 @@
                     <img id="image-6" src="assets/img/archives/file_2.jpg" style="width:100%; margin-bottom:30px" class="img-rounded" />
 					<span class="caption scale-caption">
 						<h2 class="text-center"><strong>Title</strong></h2>
-						<p class="text-center">Descripsi</p>
+						<p class="text-center">Description</p>
 					</span>
 					</div>
                 </div>
@@ -269,7 +269,7 @@
                     <img id="image-6" src="assets/img/archives/file_3.jpg" style="width:100%; margin-bottom:30px" class="img-rounded" />
 					<span class="caption scale-caption">
 						<h2 class="text-center"><strong>Title</strong></h2>
-						<p class="text-center">Descripsi</p>
+						<p class="text-center">Description</p>
 					</span>
 					</div>
                 </div>
@@ -278,7 +278,7 @@
                     <img id="image-6" src="assets/img/archives/file_4.jpg" style="width:100%; margin-bottom:30px" class="img-rounded" />
 					<span class="caption scale-caption">
 						<h2 class="text-center"><strong>Title</strong></h2>
-						<p class="text-center">Descripsi</p>
+						<p class="text-center">Description</p>
 					</span>
 					</div>
                 </div>
@@ -293,7 +293,8 @@
 	                <div id="map" class="col-md-10 col-md-offset-1" style="height:30em;">
 	                </div>
 
-	            </div> 
+	            </div>
+					<hr><hr>
 				<div class="row">
 					<div class="col-lg-2"></div>
 					<div class="col-lg-4 animated wow fadeInLeft" data-wow-delay=".2s">
@@ -301,7 +302,7 @@
 						<p>Chemical Engineering Department</p>
 						<p>Jalan Teknik Kimia, Gedung N</p>
 						<p>Institut Teknologi Sepuluh Nopember</p>
-						<p>Surabaya 60111</p><br><br>
+						<p>Surabaya 60111</p>
 					</div>
 					<div class="col-lg-2"></div>
 					<div class="col-lg-4 animated wow fadeInRight" data-wow-delay=".2s">
@@ -309,9 +310,10 @@
 						<p>email: chernival@its.ac.id</p>
 						<p>Tel: 031-234-5678-6</p>
 						<p>Fax: 031-234-5678-6</p>
-						<br><br>
+						
 					</div>
 				</div>
+				<hr>
 	        </div>
 			
 	</div>
@@ -442,16 +444,7 @@ $(document).ready(function(){
 			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
 
 		});
-		var wow = new WOW(
-	    {
-		  animateClass: 'animated',
-		  mobile: false,
-		  offset: 50
-		}
-	);
-	wow.init();
-	//parallax effect initialization
-	$('.imgAbout').parallax("50%", 0.3);
+		
 	
 
 
